@@ -12,5 +12,9 @@ class UserController {
 
     return res.json({ message: 'Cadastrado com sucesso' });
   }
+
+  async update(req, res) {
+    return res.json(req.userId);
+  }
 }
 export default new UserController();

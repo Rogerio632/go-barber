@@ -58,6 +58,12 @@ class AppointmentController {
       });
     }
 
+    if (provider_id === req.userId) {
+      return res
+        .status(401)
+        .json({ error: 'You not be able to make an appointment to yourself' });
+    }
+
     /* INÍCIO */
 
     /* Recebe a data com timezone, transforma no formato do new Date() e arredonda o horário */

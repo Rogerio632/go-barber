@@ -54,7 +54,7 @@ class AppointmentController {
 
     if (!isProvider) {
       return res.status(401).json({
-        error: "You don't have enought rights to make an appointment",
+        error: 'This user do not have enought rights to make an appointment',
       });
     }
 

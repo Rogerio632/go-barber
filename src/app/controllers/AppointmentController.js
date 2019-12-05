@@ -73,7 +73,7 @@ class AppointmentController {
 
     /* Checa se há data anterior a data atual */
     if (isBefore(hourStart, new Date())) {
-      return res.status(400).json({ error: 'past date   are not permitted' });
+      return res.status(400).json({ error: 'past date  are not permitted' });
     }
     /* FIM */
 
